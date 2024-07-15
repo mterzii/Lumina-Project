@@ -1,0 +1,346 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Open Sans',sans-serif;
+    line-height: 1.6;
+}
+
+:root
+{
+    --primary-color: #fcf5e9;
+    --container-normal:1100px;
+    --container-wide:1400px;
+    --container-narrow:900px;
+    --dark-color:#333;
+}
+
+a
+{
+text-decoration: none;
+color: #333;
+}
+
+
+ul
+{
+    list-style: none;
+}
+
+img
+{
+max-width: 100%;
+}
+
+
+
+/*--------CONTAİNER---------*/
+
+.container
+{
+    max-width: var(--container-normal);
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.container-lg
+{
+    max-width: (--container-wide);
+}
+
+
+.container-sm
+{
+    max-width: (--container-wide);
+}
+
+/*--------HEADER--------*/
+.header
+{
+    margin:  auto;
+    line-height: 10rem;
+    background: #31363F;
+    margin-bottom: rem;
+}
+.header .logo
+{
+    
+    width: 130px;
+    position: relative;
+    left: -300px;
+}
+
+.header .header-flex
+{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.header .main-menu
+{
+    display: flex;
+    gap: 5rem;
+    justify-content: flex-end;
+    
+}
+
+.header .main-menu a
+{
+    padding: 0.6rem 1.1rem;
+    margin-left: auto;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.main-menu li:last-child {
+    position: relative;
+    right: -100px;
+     /* Adjust the value as needed */
+}
+.main-menu li:nth-child(2) {
+    position: relative;
+    right: -80px;
+     /* Adjust the value as needed */
+}
+.main-menu li:first-child {
+    position: relative;
+    right: -40px;
+     /* Adjust the value as needed */
+}
+
+
+.header .main-menu a:hover
+{
+    background: var(--primary-color);
+    color: #31363F;
+}
+
+.current
+{
+    
+    background-color: var(--primary-color);
+    font-weight: 600;
+    color: black !important;
+}
+
+
+
+/*-------HERO----------*/
+.hero
+{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  
+    text-align: center;
+}
+
+.hero h2
+{
+    font-size: 2.8rem;
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+
+
+.gallery-flex
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.gallery-item
+{
+    width: calc(33% - 20px);
+}
+
+.gallery-item img
+{
+    border-radius: 10px;
+}
+
+.galleryh-item img:hover
+{
+    opacity: 0.9;
+}
+
+
+/*---------Utilty Classes----------*/
+.bg-primary
+{
+    background: var(--primary-color);
+    color:#333;
+}
+
+.bg-dark
+{
+    background: var(--dark-color);
+    color:#fff;
+}
+
+.bg-dark .bg-primary
+{
+    padding: 0 0.3rem;
+}
+
+
+/*----------FOOTER----------*/
+.footer
+{
+    border-top: 1px solid #aaa;
+    padding: 2rem 1.5rem;
+}
+
+.footer .footer-flex
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.footer img
+{
+    width: 120px;
+    height: 35px;
+}
+
+.footer h4
+{
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+
+.footer a
+{
+    margin: 0.2rem;
+}
+
+
+
+.services
+{
+    
+    padding: 3rem 0 5rem;
+}
+
+
+.services-flex
+{
+    display: flex;
+    margin: 2.5rem 0;
+    gap: 150px;
+    
+}
+
+.services-flex:nth-child(2)
+{
+    position: relative;
+    right: -60px;
+}
+
+.section-heading
+{
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 40px;
+}
+
+.service-item h4
+{
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.team-flex
+{
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+
+.team-item h4
+{
+    font-size: 1.8rem;
+    margin: 1.1rem 0;
+}
+
+.team-item p
+{
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.team-item img
+{
+    border-radius: 50px;
+    margin-bottom: 10px;
+}
+
+/*---------------İconlar -----------*/
+
+.social
+{
+    padding: 4rem;
+}
+.footer h4
+{
+    font-size: 20px;
+}
+.social h4
+{
+    margin-bottom: 50px;
+    position: relative;
+    right: -90px;
+}
+
+.social i
+{
+    margin: 0 20px;
+    font-size: 3rem;
+}
+i.fab.fa-facebook {
+    color: #0866FF;
+}
+
+i.fab.fa-twitter {
+    color: #1C96E8;
+}
+
+i.fab.fa-instagram
+{
+    color: #F502AF;
+}
+
+i.fa-brands.fa-whatsapp
+{
+    color: #00D86F;
+}
+
+i.fa-solid.fa-location-dot
+{
+
+    margin: 4px;
+    font-size: 22px;
+}
+
+li span
+{   
+    margin: 5px;
+    font-size: 15px;
+}
